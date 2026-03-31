@@ -1,0 +1,34 @@
+# Netlify Build Settings
+# This file documents the build configuration for clawopen-life
+
+build:
+  publish: "."
+  command: null  # Static site, no build command needed
+
+# Auto-deploy settings (Netlify UI configuration)
+# - Connect to GitHub: buledy1-sys/clawopen-life
+# - Branch: main  
+# - Build directory: /
+# - Framework preset: Static
+
+site_settings:
+  auto_deploy: true
+  deploy_on_push: true
+
+# Manual Netlify setup steps:
+# 1. Go to https://app.netlify.com
+# 2. Click "Add new site" → "Import an existing project"
+# 3. Select GitHub
+# 4. Choose repository: buledy1-sys/clawopen-life
+# 5. Set "Publish directory" to /
+# 6. No build command needed (static HTML)
+# 7. Click "Deploy site"
+# 8. Site will be live at https://clawopen-life.netlify.app
+#
+# OR if modifying existing site:
+# 1. Go to https://app.netlify.com/sites/clawopen-life
+# 2. Go to "Site settings" → "Change site name" 
+# 3. Change to "clawopen" or keep current name
+# 4. Go to "Deploys" → "Connect to Git"
+# 5. Select buledy1-sys/clawopen-life repo
+# 6. Netlify will auto-deploy
